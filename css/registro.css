@@ -1,0 +1,84 @@
+.containerRegistro {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-bottom: 5px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+  padding: 20px 25px;
+  gap: 10px;
+
+  label {
+    text-align: start;
+  }
+
+  .inputRegistro {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+  }
+}
+
+.form .buttonSubmit {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(244, 198, 114);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonSubmit:hover {
+  background-color: rgb(214, 165, 73);
+}
+
+@media only screen and (min-width: 480px) {
+  .containerRegistro {
+    margin-top: 150px;
+    padding: 35px 70px;
+  }
+
+  .form {
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px 0px rgb(26, 20, 20);
+
+    label {
+      width: 100%;
+      text-align: start;
+    }
+
+    .inputRegistro {
+      padding: 15px;
+      justify-content: center;
+      display: flex;
+    }
+  }
+  .form .buttonSubmit {
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .containerRegistro {
+    margin-top: 80px;
+    padding: 100px 170px;
+  }
+
+  .form {
+    width: 800px;
+  }
+}
+
+

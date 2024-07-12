@@ -1,0 +1,97 @@
+.containerNosotros {
+  width: 100%;
+  min-height: 800px;
+  text-align: center;
+}
+h1 {
+  padding: 20px 0px;
+}
+
+.containerCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 0px;
+
+  .card {
+    width: 345px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.877);
+    padding-top: 20px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 10px 1px;
+
+    img {
+      width: 300px;
+      height: 300px;
+      border: 1px solid white;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h3 {
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.742);
+    }
+    p {
+      padding: 10px;
+      color: white;
+    }
+  }
+
+  .containerIconos2 {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 15px;
+
+    a i {
+      color: rgba(255, 255, 255, 0.742);
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .containerNosotros {
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .containerCards {
+      width: 100%;
+      min-height: 400px;
+      gap: 15px;
+
+      .card {
+        width: 220px;
+
+        img {
+          width: 190px;
+          height: 210px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .containerNosotros {
+    .containerCards {
+      min-height: 350px;
+      gap: 40px;
+
+      .card {
+        width: 350px;
+
+        img {
+          width: 280px;
+          height: 280px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+footer {
+  width: 100%;
+  min-height: 20vh;
+  background-color: black;
+  padding-top: 20px;
+}
+
+.containerFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  .containerLogo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100px;
+      height: 90px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+}
+
+h4 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.containerHorarios {
+  text-align: center;
+  color: white;
+  gap: 5px;
+}
+
+.containerHorarios li {
+  list-style: none;
+}
+.containerIconos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  a i {
+    font-size: 25px;
+    color: rgb(250, 250, 250);
+  }
+}
+
+.derechosreservados {
+  color: white;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-width: 480px) {
+  footer {
+    min-height: 15vh;
+    .containerFooter {
+      flex-direction: row;
+      justify-content: space-around;
+
+      .containerLogo {
+        width: 100px;
+        height: 90px;
+        display: block;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    .containerFooter {
+      justify-content: space-around;
+
+      .containerLogo {
+        width: 120px;
+        height: 100px;
+        display: block;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 17px;
+  }
+}
